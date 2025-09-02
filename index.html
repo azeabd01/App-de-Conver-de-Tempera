@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Température du jour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <h1>La Météo</h1>
+
+        <!-- Formulaire -->
+        <div class="input-group">
+            <input type="number" id="temperature-input" placeholder="Entrez la température" required>
+            <select id="unit-selector">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+            </select>
+        </div>
+        <button onclick="Temperature()">Convertir</button>
+
+        <!-- Résultat -->
+        <div id="result">
+            <h2>Résultat :</h2>
+            <p id="tempera-conver"></p>
+            <p id="statu"></p>
+        </div>
+
+        <!-- Image météo -->
+        <div id="image">
+            <img src="Asset/image/icones-previsions-meteo-soleil-nuage-pluie-neige_107791-17372.jpg" alt="Météo" id="weather-img">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    
